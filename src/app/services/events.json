@@ -1,0 +1,16 @@
+[
+  {
+    "eventName": "RUN FOR CAT1",
+    "city": "Pune",
+    "eventDesc": "This event supports Top Cat",
+    "eventDate": "2020-03-02",
+    "category": "5K,10K"
+  },
+  {
+    "eventName": "RUN FOR MOUSE1",
+    "city": "Pune",
+    "eventDesc": "This event supports Jerry",
+    "eventDate": "2020-02-02",
+    "category": "5K,10K"
+  }
+]

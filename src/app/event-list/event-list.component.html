@@ -1,0 +1,10 @@
+<div class="row card-group">
+  <div class="col-4" *ngFor="let item of eventList">
+    <div class="card">
+      <app-event
+        [eventObj]="item"
+        (eventClickedEvent)="onEventClicked($event)"
+      ></app-event>
+    </div>
+  </div>
+</div>
