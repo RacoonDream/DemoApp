@@ -18,14 +18,7 @@ export class DummyDataService {
 
   // make this work
   getEventsURL(): Observable<IRaceEvent[]> {
-    // return this.http
-    //   .get<IRaceEvent[]>(this.productUrl)
-    //   .pipe(map((response: any) => response.json()));
-
-    return this.http.get<IRaceEvent[]>(this.productUrl).pipe(
-      tap(data => console.log("All: " + JSON.stringify(data))),
-      catchError(this.handleError)
-    );
+    return this.http.get<IRaceEvent[]>(this.productUrl);
   }
   private handleError(err: HttpErrorResponse) {
     let errorMessage = "";

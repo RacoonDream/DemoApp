@@ -3,8 +3,6 @@ import { Component, OnInit, Output, EventEmitter } from "@angular/core";
 import { Observable } from "rxjs";
 import { IRaceEvent } from "./../Model/raceEvent";
 
-
-
 @Component({
   selector: "app-event-list",
   templateUrl: "./event-list.component.html",
@@ -13,15 +11,14 @@ import { IRaceEvent } from "./../Model/raceEvent";
 export class EventListComponent implements OnInit {
   constructor(private dummyDataService: DummyDataService) {}
 
-   eventList: Observable<IRaceEvent[]>; // this doesnt work
-  //eventList: IRaceEvent[]; //this works
+  eventList: IRaceEvent[];
   errorMessage: string;
   @Output() SelectedEvent: EventEmitter<string> = new EventEmitter<string>();
 
   ngOnInit() {
-    //this.eventList = this.dummyDataService.getEvents(); // this works
-    this.eventList= this.dummyDataService.getEventsURL();
-    console.log(this.eventList);
+    this.dummyDataService
+      .getEventsURL()
+      .subscribe(res => (this.eventList = res));
   }
 
   onEventClicked(payload: string) {
