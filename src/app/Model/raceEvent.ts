@@ -1,4 +1,7 @@
-export interface IRaceEvent{
+export interface IRaceEvent {
+  Id: number;
+  eventImageURL: string;
+  // eventImageURLBig: string;
   eventName: string;
   eventDesc: string;
   city: string;

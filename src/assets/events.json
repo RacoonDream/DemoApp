@@ -1,16 +1,20 @@
 [
   {
-    "eventName": "RUN FOR CAT1",
+    "Id": 1,
+    "eventName": "Pune Marathon 2020",
     "city": "Pune",
     "eventDesc": "This event supports Top Cat",
-    "eventDate": "2020-03-02",
-    "category": "5K,10K"
+    "eventDate": "2nd Feb 2020",
+    "category": "5K,10K",
+    "eventImageURL": "./assets/images/pune.PNG"
   },
   {
-    "eventName": "RUN FOR MOUSE1",
-    "city": "Pune",
+    "Id": 2,
+    "eventName": "Mumbai Marathon 2020",
+    "city": "Mumbai",
     "eventDesc": "This event supports Jerry",
-    "eventDate": "2020-02-02",
-    "category": "5K,10K"
+    "eventDate": "9th Feb 2020",
+    "category": "5K,10K",
+    "eventImageURL": "./assets/images/mumbai.PNG"
   }
 ]

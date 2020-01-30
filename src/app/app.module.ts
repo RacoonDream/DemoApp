@@ -8,13 +8,15 @@ import { EventComponent } from "./event/event.component";
 import { EventListComponent } from "./event-list/event-list.component";
 import { RegistrationComponent } from "./registration/registration.component";
 import { HttpClientModule } from "@angular/common/http";
+import { EventDetailsComponent } from './event-details/event-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EventComponent,
     EventListComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    EventDetailsComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

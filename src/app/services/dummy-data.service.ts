@@ -36,19 +36,23 @@ export class DummyDataService {
     return [
       {
         // tslint:disable-next-line: quotemark
+        Id: 1,
         eventName: "RUN FOR CAT",
         city: "Pune",
         eventDesc: "This event supports Top Cat",
         eventDate: new Date("2020-03-02"),
-        category: "5K,10K"
+        category: "5K,10K",
+        eventImageURL: "./assets/images/mumbai.PNG"
       },
       {
         // tslint:disable-next-line: quotemark
+        Id: 2,
         eventName: "RUN FOR MOUSE",
         city: "Pune",
         eventDesc: "This event supports Jerry",
         eventDate: new Date("2020-02-02"),
-        category: "5K,10K"
+        category: "5K,10K",
+        eventImageURL: "./assets/images/mumbai.PNG"
       }
     ];
   }
