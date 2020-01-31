@@ -14,6 +14,7 @@ import { map } from "rxjs/operators";
 })
 export class DummyDataService {
   private productUrl = "./assets/events.json";
+  //private productUrl = "http://localhost:7700/api/events";
   constructor(private http: HttpClient) {}
 
   // make this work
@@ -36,7 +37,7 @@ export class DummyDataService {
     return [
       {
         // tslint:disable-next-line: quotemark
-        Id: 1,
+        id: 1,
         eventName: "RUN FOR CAT",
         city: "Pune",
         eventDesc: "This event supports Top Cat",
@@ -46,7 +47,7 @@ export class DummyDataService {
       },
       {
         // tslint:disable-next-line: quotemark
-        Id: 2,
+        id: 2,
         eventName: "RUN FOR MOUSE",
         city: "Pune",
         eventDesc: "This event supports Jerry",

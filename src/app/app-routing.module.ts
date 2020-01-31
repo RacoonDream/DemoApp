@@ -9,7 +9,7 @@ const routes: Routes = [
     component: RegistrationComponent
   },
   {
-    path: "events/:Id",
+    path: "events/:id",
     component: EventDetailsComponent
   }
 ];

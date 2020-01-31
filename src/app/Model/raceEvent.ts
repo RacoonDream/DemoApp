@@ -1,5 +1,5 @@
 export interface IRaceEvent {
-  Id: number;
+  id: number;
   eventImageURL: string;
   // eventImageURLBig: string;
   eventName: string;

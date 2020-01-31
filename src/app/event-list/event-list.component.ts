@@ -1,4 +1,5 @@
 import { DummyDataService } from "./../services/dummy-data.service";
+import { DataService } from "./../services/data.service";
 import { Component, OnInit, Output, EventEmitter } from "@angular/core";
 import { Observable } from "rxjs";
 import { IRaceEvent } from "./../Model/raceEvent";
@@ -9,16 +10,14 @@ import { IRaceEvent } from "./../Model/raceEvent";
   styleUrls: ["./event-list.component.css"]
 })
 export class EventListComponent implements OnInit {
-  constructor(private dummyDataService: DummyDataService) {}
+  constructor(private dataService: DataService) {}
 
   eventList: IRaceEvent[];
   errorMessage: string;
   @Output() SelectedEvent: EventEmitter<string> = new EventEmitter<string>();
 
   ngOnInit() {
-    this.dummyDataService
-      .getEventsURL()
-      .subscribe(res => (this.eventList = res));
+    this.dataService.getEventsURL().subscribe(res => (this.eventList = res));
   }
 
   onEventClicked(payload: string) {
